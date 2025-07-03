@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podología Integral</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="podologia-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="logo-podologia.png" alt="Podología Integral" class="logo-img">
+                </a>
+                
+                <!-- Menú Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú de Navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quien soy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item cta-button">
+                            <a class="btn btn-primary" href="#">Pedir cita</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <h1>Cuidado experto para tus pies</h1>
+                <p class="lead">En nuestra clínica de podología ofrecemos tratamientos personalizados para mantener la salud de tus pies. Nuestros especialistas están comprometidos con tu bienestar y movilidad.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">Pedir cita ahora</a>
+                    <a href="#" class="btn btn-outline-secondary btn-lg">Conoce nuestros servicios</a>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-image">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Podóloga examinando el pie de un paciente" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección Servicios -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Nuestros Tratamientos Podológicos</h2>
+            <p class="section-subtitle">Soluciones especializadas para la salud de tus pies</p>
+            <div class="divider mx-auto"></div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Podología Deportiva</h3>
+                    <p>Análisis biomecánico y tratamiento de lesiones relacionadas con la práctica deportiva.</p>
+                    <a href="#" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Tratamiento de Hongos</h3>
+                    <p>Soluciones efectivas para onicomicosis y otras infecciones fúngicas en uñas y piel.</p>
+                    <a href="#" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Quiropodias</h3>
+                    <p>Eliminación de helomas (callos) y hiperqueratosis para aliviar el dolor y mejorar la comodidad.</p>
+                    <a href="#" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Servicio 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Uñas Encarnadas</h3>
+                    <p>Tratamiento indoloro y eficaz para la onicocriptosis con técnicas mínimamente invasivas.</p>
+                    <a href="#" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Servicio 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Pie Diabético</h3>
+                    <p>Cuidado especializado para prevenir complicaciones en pacientes con diabetes.</p>
+                    <a href="#" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Servicio 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h3>Plantillas Personalizadas</h3>
+                    <p>Diseño y fabricación de ortesis plantares para corregir problemas biomecánicos.</p>
+                    <a href="#" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-primary btn-lg">Ver todos nuestros servicios</a>
+        </div>
+    </div>
+</section>
+<!-- Sección Quien Soy -->
+<section class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                     alt="Podóloga profesional en consulta" 
+                     class="img-fluid rounded shadow-lg about-image">
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <div class="divider"></div>
+                    <p class="lead">Soy Laura Méndez, podóloga titulada con más de 12 años de experiencia en el cuidado integral del pie.</p>
+                    <p>Mi formación incluye especialización en podología deportiva y pie diabético en la Universidad de Barcelona. Creo en un enfoque holístico que combina los últimos avances técnicos con un trato humano y personalizado.</p>
+                    <p>En mi consulta no solo tratamos problemas podológicos, sino que educamos a los pacientes para prevenir futuras complicaciones y mejorar su calidad de vida.</p>
+                    <div class="about-cta mt-4">
+                        <a href="#" class="btn btn-primary me-3">Conoce mi formación</a>
+                        <a href="#" class="btn btn-outline-primary">Pide cita conmigo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Testimonios -->
+<section class="testimonials-section bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+            <p class="section-subtitle">Experiencias reales de personas que han confiado en nosotros</p>
+            <div class="divider mx-auto"></div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Testimonio 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Después de años sufriendo con uñas encarnadas, la Dra. Méndez solucionó mi problema en una sola sesión. El tratamiento fue completamente indoloro y la atención excelente."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente satisfecha" class="testimonial-img rounded-circle">
+                        <div class="author-info">
+                            <h5>María González</h5>
+                            <p>Paciente desde 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonio 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Como corredor amateur, los problemas biomecánicos me limitaban. Gracias a las plantillas personalizadas y consejos de la Dra., he mejorado mis marcas y eliminado el dolor."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente satisfecho" class="testimonial-img rounded-circle">
+                        <div class="author-info">
+                            <h5>Javier Rodríguez</h5>
+                            <p>Atleta recreacional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonio 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Soy diabético y el cuidado de mis pies es crucial. La atención periódica que recibo aquí me da tranquilidad y ha evitado complicaciones graves. Muy profesionales."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente satisfecho" class="testimonial-img rounded-circle">
+                        <div class="author-info">
+                            <h5>Carlos Martínez</h5>
+                            <p>Paciente con diabetes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Blog -->
+<section class="blog-section">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Últimos Artículos</h2>
+            <p class="section-subtitle">Consejos y novedades sobre salud podológica</p>
+            <div class="divider mx-auto"></div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Artículo 1 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                             alt="Cuidado de pies en verano" 
+                             class="img-fluid">
+                        <div class="blog-badge">Nuevo</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>15 Junio 2023</span>
+                            <span class="blog-author"><i class="far fa-user me-2"></i>Dra. Laura Méndez</span>
+                        </div>
+                        <h3 class="blog-title">Cuidados esenciales para tus pies en verano</h3>
+                        <p class="blog-excerpt">Descubre cómo proteger tus pies de los problemas más comunes durante los meses de calor.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="blog-link">Leer más <i class="fas fa-chevron-right"></i></a>
+                            <div class="blog-likes">
+                                <i class="far fa-heart"></i> <span>142</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Artículo 2 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                             alt="Zapatos para correr" 
+                             class="img-fluid">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>2 Junio 2023</span>
+                            <span class="blog-author"><i class="far fa-user me-2"></i>Dra. Laura Méndez</span>
+                        </div>
+                        <h3 class="blog-title">Cómo elegir el calzado deportivo adecuado</h3>
+                        <p class="blog-excerpt">Guía completa para seleccionar las zapatillas ideales según tu tipo de pisada y deporte.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="blog-link">Leer más <i class="fas fa-chevron-right"></i></a>
+                            <div class="blog-likes">
+                                <i class="far fa-heart"></i> <span>89</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Artículo 3 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1621341838101-4b6d3aac42dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                             alt="Pie diabético cuidados" 
+                             class="img-fluid">
+                        <div class="blog-badge">Popular</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>20 Mayo 2023</span>
+                            <span class="blog-author"><i class="far fa-user me-2"></i>Dra. Laura Méndez</span>
+                        </div>
+                        <h3 class="blog-title">Prevención y cuidados del pie diabético</h3>
+                        <p class="blog-excerpt">Consejos fundamentales para evitar complicaciones y mantener una buena salud podológica.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="blog-link">Leer más <i class="fas fa-chevron-right"></i></a>
+                            <div class="blog-likes">
+                                <i class="fas fa-heart"></i> <span>256</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-outline-primary">Ver todos los artículos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="footer-logo">
+                    <img src="logo-podologia.png" alt="Podología Integral" class="img-fluid" style="max-height: 60px;">
+                </div>
+                <p class="footer-about mt-3">Clínica especializada en el cuidado integral del pie, ofreciendo tratamientos personalizados con la más alta calidad profesional.</p>
+                <div class="footer-social mt-4">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h4 class="footer-title">Contacto</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Salud 123, Barcelona, España</li>
+                    <li><i class="fas fa-phone-alt"></i> +34 933 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@podologiaintegral.com</li>
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 - 20:00</li>
+                </ul>
+                <a href="https://wa.me/34933123456" class="btn btn-success mt-3 whatsapp-btn">
+                    <i class="fab fa-whatsapp me-2"></i> Contactar por WhatsApp
+                </a>
+            </div>
+            
+            <div class="col-lg-4">
+                <h4 class="footer-title">Enlaces rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Sobre mí</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Política de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">&copy; 2023 Podología Integral. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-legal">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

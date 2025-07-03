@@ -1,0 +1,847 @@
+/* Estilos generales para el header */
+.podologia-header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+/* Estilos para el logo */
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+/* Estilos para los items del menú */
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Efecto hover para los items del menú */
+.navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover:after {
+    width: 100%;
+}
+
+/* Estilo para el botón de CTA */
+.cta-button .btn {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilos para el menú hamburguesa */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Media queries para ajustar el punto de colapso */
+@media (max-width: 860px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-nav {
+        align-items: flex-end;
+    }
+    
+    .cta-button {
+        margin-top: 0.5rem;
+    }
+}
+/* Estilos para la sección Hero */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #e3f2fd;
+    z-index: 0;
+    border-radius: 50% 0 0 50%;
+    transform: scale(1.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content .lead {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.hero-buttons .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+.hero-buttons .btn-outline-secondary {
+    color: #495057;
+    border-color: #495057;
+}
+
+.hero-buttons .btn-outline-secondary:hover {
+    background-color: #495057;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(73, 80, 87, 0.2);
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.hero-image img {
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .hero-section {
+        text-align: center;
+        padding: 3rem 0;
+    }
+    
+    .hero-content .lead {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-section::before {
+        display: none;
+    }
+    
+    .hero-image {
+        margin-top: 3rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content .lead {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .hero-buttons {
+        gap: 0.5rem;
+    }
+}
+
+/* Estilos para la sección de Servicios */
+.services-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 1rem auto;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.1);
+    border-color: rgba(0, 123, 255, 0.3);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background-color: #007bff;
+    transition: height 0.3s ease;
+}
+
+.service-card:hover::before {
+    height: 100%;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+    font-size: 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background-color: #007bff;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.service-card p {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+}
+
+.service-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Estilos para la sección Quien Soy */
+.about-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.about-image {
+    transition: transform 0.5s ease;
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+}
+
+.about-content {
+    padding: 0 2rem;
+}
+
+.about-content .lead {
+    font-size: 1.25rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+.about-content p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.about-cta .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.about-cta .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.about-cta .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos para la sección de Testimonios */
+.testimonials-section {
+    padding: 5rem 0;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.1);
+}
+
+.testimonial-rating {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #495057;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.testimonial-text::before {
+    content: '"';
+    font-size: 3rem;
+    color: rgba(0, 123, 255, 0.1);
+    position: absolute;
+    left: -0.5rem;
+    top: -1rem;
+    line-height: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 3px solid #e3f2fd;
+}
+
+.author-info h5 {
+    margin-bottom: 0.25rem;
+    color: #212529;
+}
+
+.author-info p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .about-section, .testimonials-section {
+        padding: 3rem 0;
+    }
+    
+    .about-content {
+        padding: 0;
+        margin-top: 2rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cta .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .about-cta .btn:last-child {
+        margin-bottom: 0;
+    }
+    
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+    
+    .testimonial-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Estilos para la sección Blog */
+.blog-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.1);
+}
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #007bff;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.blog-meta i {
+    color: #007bff;
+}
+
+.blog-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.blog-excerpt {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e9ecef;
+    padding-top: 1rem;
+}
+
+.blog-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.blog-link i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.blog-link:hover {
+    color: #0056b3;
+}
+
+.blog-link:hover i {
+    transform: translateX(5px);
+}
+
+.blog-likes {
+    color: #6c757d;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.blog-likes i {
+    margin-right: 0.25rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.blog-likes i:hover {
+    color: #dc3545;
+}
+
+.blog-likes .fas.fa-heart {
+    color: #dc3545;
+}
+
+/* Estilos para el Footer */
+.footer-section {
+    background-color: #212529;
+    color: white;
+    padding: 4rem 0 0;
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.footer-about {
+    color: #adb5bd;
+    line-height: 1.7;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #007bff;
+    transform: translateY(-3px);
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 0.75rem;
+    color: #adb5bd;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-contact i {
+    color: #007bff;
+    margin-right: 0.75rem;
+    margin-top: 0.2rem;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    border-color: #25d366;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    border-color: #128c7e;
+    transform: translateY(-2px);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+.footer-links i {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid #343a40;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+
+.copyright {
+    color: #adb5bd;
+    margin-bottom: 0;
+}
+
+.footer-legal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.footer-legal a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .blog-section {
+        padding: 3rem 0;
+    }
+    
+    .footer-section {
+        padding: 3rem 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-image {
+        height: 180px;
+    }
+    
+    .blog-content {
+        padding: 1.25rem;
+    }
+    
+    .footer-bottom .row > div {
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .footer-title {
+        margin-top: 2rem;
+    }
+    
+    .footer-title:first-child {
+        margin-top: 0;
+    }
+}
